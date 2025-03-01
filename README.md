@@ -1,27 +1,43 @@
-# LandingPage
+[JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript  
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript  
+[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular  
+[PROJECT__BADGE]: https://img.shields.io/badge/%F0%9F%93%B1Visit_this_project-000?style=for-the-badge&logo=project  
+[PROJECT__URL]: https://landing-page-ssr.vercel.app/  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
+# Landing Page with SSR 🚀
 
-## Development server
+![angular][ANGULAR__BADGE] ![typescript][TYPESCRIPT__BADGE] ![javascript][JAVASCRIPT__BADGE]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 About the project
+This repository contains a Landing Page built with **Angular 17** using **Server-Side Rendering (SSR)** for performance optimization.
 
-## Code scaffolding
+## 🚀 How to run the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ✅ Requirements
+Before starting, make sure you have the following installed:
 
-## Build
+- [NodeJS](https://nodejs.org/) 
+- [Git](https://git-scm.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 📥 Cloning the repository
+Run the following command to clone the repository locally:
 
-## Running unit tests
+```bash
+git clone https://github.com/EmanuelIna/landing-page-kipper.git
+cd landing-page
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### ▶️ Starting the project
+Now, install the dependencies and start the project:
 
-## Running end-to-end tests
+```bash
+npm install
+npm start
+```
+The project will be running at `http://localhost:4200/`.
+   
+## 🔗 Useful links
+- [Angular 17 Documentation](https://angular.dev/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
