@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,9 +11,9 @@ export class NewsletterService {
 
   constructor(private http: HttpClient) { }
 
-  sendData(name: string, email: string): Observable<NewsletterResponse>{
+  sendData(name: string, email: string): Observable<NewsletterService>{
     const data = {name, email};
 
-    return this.http.post<NewsletterResponse>(this.endpointURL, data)
+    return this.http.post<NewsletterService>(this.endpointURL, data)
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from "../btn-primary/btn-primary.component";
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NewsletterService } from '../../services/newsletter.service';
@@ -19,6 +19,7 @@ import { NewsletterService } from '../../services/newsletter.service';
 
 export class NewsletterFormComponent {
   newsLetterForm!: FormGroup;
+  loading = signal(false);
 
   constructor(private service: NewsletterService) {
     this.newsLetterForm = new FormGroup({
@@ -28,8 +29,14 @@ export class NewsletterFormComponent {
   }
 
   onSubmit(){
+    this.loading.set(true);
     if(this.newsLetterForm.valid){
-      this.service.sendData(this.newsLetterForm.value.name, this.newsLetterForm.value.email).subscribe()
+      this.service.sendData(this.newsLetterForm.value.name, this.newsLetterForm.value.email).subscribe({
+        next: () =>{
+          this.newsLetterForm.reset();
+          this.loading.set(false)
+        }
+      })
     }
   }
 }
